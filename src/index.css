@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  animation: Slider-Sidebar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes Slider-Sidebar {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bg-black-gradient {
+  background: linear-gradient(to top, #fff -278%, #6d6d6d -78%, #11101d 100%);
+}
+
+.bg-discount-graident {
+  background: linear-gradient(130deg, #272727 0%, #11101d 100%);
+}
+
+.border {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* background: linear-gradient(
+    0deg,
+    black,
+    rgba(34, 37, 195, 0.8240546218487395) 0%,
+    black,
+    rgba(107, 200, 255, 1) 47%,
+    black
+  ); */
+  background: linear-gradient(#570fe7, #00c0fd);
+}
+
+.text-gradient {
+  /* background: linear-gradient(0deg, rgba(34,195,101,0.38707983193277307) 0%, rgba(107,247,255,1) 47%); */
+  /* background: linear-gradient(orange, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #fff;
+  font: bold;
+  pointer-events: none;
+}
+
+.NavInfo {
+  /* background: url(https://imgfon.ru/Images/Original/3D-images/globus-3d-shar-planeta-lejit-klaviatura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: var(--dark-mode, #191919);
+}
+
+.text-white-100 {
+  color: #6d6d6d;
+}
+
+.MyTech h2,
+span {
+  color: var(--solid-heading-dark-mode, #ccc);
+}
+
+
+
+@media (max-height: 668px) {
+  .NavInfo{
+    height: 100vh;
+  } 
+  .mytech{
+    height: 300vh;
+    }
+
+    .cardd{
+      height:580vh;
+    } 
+    .myres {
+      height: 180vh;
+      background: var(--dark-mode, #191919);
+    }
+}
+
+@media (max-height: 896px){
+  
+  .myres {
+    height: 140vh;
+    background: var(--dark-mode, #191919);
+  }
+
+  .cardd{
+    height:400vh;
+  } 
+
+  .Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: var(--dark-mode, #191919);
+  }
+}
+
+.Footer{
+  height: 20vh;
+}
+
+
+
+
+
+.cardd{
+  background: var(--dark-mode, #191919);
+}
+
+.card{
+  background-color: #363636;
+}
+
+.footer-line{
+  border-bottom: 1px solid ;
+stroke: var(--solid-heading, #42446E);
+opacity: 0.3;
+}
